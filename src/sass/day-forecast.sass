@@ -1,0 +1,40 @@
+.day-forecast
+  width: calc(100% / 7)
+  display: flex
+  flex-flow: column
+  align-items: center
+  &__title
+    color: $text-white
+    font-size: 1.4rem
+    font-weight: 300
+    margin: 1rem 0 0.8rem 0
+  &__weather
+    height: 2rem
+    margin-bottom: 0.7rem
+  &__temp
+    font-size: 1.5rem
+    font-weight: 100
+    margin-bottom: 0.8rem
+    &_max
+      color: $text-white
+    &_min
+      color: $text-light
+      margin-left: 1.2rem
+  &__columns
+    height: 4.7rem
+    width: 100%
+    display: flex
+    flex-flow: row
+    align-items: flex-end
+  &__column
+    width: 50%
+    margin-right: 0.1rem
+    &_max
+      background-color: rgba(241,150,28,0.5)
+      height: 100%
+      border-top: 2px solid #F1961C
+    &_min
+      background-color: rgba(107,135,188,0.5)
+      height: 50%
+      border-top: 2px solid #6B87BC
+

@@ -1,0 +1,55 @@
+.countries
+  background-color: $base-background
+  height: calc(100% - 2rem)
+  &-controls
+    margin-top: 2rem
+    padding: 0 1.3rem
+    height: 5rem
+    display: flex
+    flex-direction: row
+    &__item
+      color: $text-white
+      display: flex
+      align-items: center
+      font-size: 1.7rem
+    &__done
+      cursor: pointer
+      color: #54C9F9
+      font-size: 2rem
+    &__location
+      color: #9FA0A5
+      font-size: 1.5rem
+  &-search
+    position: relative
+    padding: 0.8rem
+    height: 4.5rem
+    &__input, &__input:focus
+      background-color: #4E555E
+      border: 1px solid #54C7FC
+      border-radius: 0.7rem
+      font-size: 1.8rem
+      padding-left: 3.7rem
+      color: $text-white
+      max-height: 3rem
+      background-image: url("../assets/images/search_icon.svg")
+      background-size: 1.5rem
+      background-repeat: no-repeat
+      background-position: 0.7rem 50%
+    &__clear
+      position: absolute
+      cursor: pointer
+      right: 1.4rem
+      top: 1.4rem
+  &-list
+    background-color: #4E555E
+    padding-left: 2rem
+    max-height: calc(100% - 9.5rem)
+    overflow-y: scroll
+    &__item
+      list-style: none
+      border-bottom: 1px solid #979797
+      color: $text-light
+      font-size: 1.5rem
+      padding: 1.4rem 0
+    &__highlight
+      color: $text-white

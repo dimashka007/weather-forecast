@@ -1,0 +1,42 @@
+html
+  font-size: 10px
+  font-family: Helvetica Neue Light
+  #app
+    background-color: $base-background
+    height: 100vh
+    fade-enter-active, .fade-leave-active
+      transition: opacity .3s ease
+    .fade-enter, .fade-leave-to
+      opacity: 0
+    #app-content
+      position: absolute
+      top: 0
+      width: 100%
+      height: 100%
+      .status-bar
+        display: flex
+        background-color: $base-background
+        align-items: center
+        max-height: 2rem
+        padding: 0 0.8rem
+        width: 100%
+        position: fixed
+        z-index: 9999
+        &__item
+          display: flex
+          flex-direction: row
+          align-items: center
+        &__text
+          font-size: 1.2rem
+          line-height: 1.3rem
+          color: #ffffff
+          margin-right: 0.5rem
+        &__time
+          font-size: 1.4rem
+          line-height: 1.5rem
+          color: $text-white
+    .bg-blur
+      background-image: url("../assets/images/Map.png")
+      height: 100%
+      background-size: cover
+      filter: blur(12rem)

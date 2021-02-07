@@ -1,0 +1,66 @@
+.forecast
+  height: 100%
+  display: flex
+  flex-flow: column
+  &-header, &-summary, &-period
+    background-color: $base-background
+    display: flex
+    flex-direction: row
+    align-items: center
+    flex: 0 1 auto
+  &-header
+    margin-top: 2rem
+    padding: 0 1.2rem
+    height: 5rem
+    &__item
+      color: $text-white
+      display: flex
+      align-items: center
+      font-size: 1.7rem
+      line-height: 1.9rem
+    &__location
+      color: #9FA0A5
+      font-size: 1.5rem
+    img
+      width: 3rem
+  &-summary
+    justify-content: space-between
+    padding: 1rem 1.3rem
+    &__title
+      color: $text-white
+      font-size: 2rem
+    &__temperature
+      font-size: 1.9rem
+      &_max
+        color: $text-white
+      &_min
+        color: $text-light
+        margin-left: 0.5rem
+  &-period
+    padding: 1.3rem
+    margin-top: auto
+    &__title
+      color: $text-white
+      font-size: 2rem
+  &-body
+    flex: 1 1 auto
+    display: flex
+    flex-flow: column
+    align-items: center
+    &__temperature
+      font-weight: 300
+      font-size: 8rem
+      color: $text-white
+      margin-top: 20%
+    &__city
+      font-size: 3.3rem
+      color: $text-white
+      line-height: 3.5rem
+      margin-top: 2rem
+    &__weather
+      font-size: 2rem
+      color: $text-white
+      &_icon
+        margin-left: 0.8rem
+        margin-bottom: 0.6rem
+        height: 1.6rem
